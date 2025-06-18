@@ -15,14 +15,13 @@ async function allowWebPush() {
     if ('Notification' in window) {
         let permission = Notification.permission;
 
-        if (permission === 'denied') {
-            alert('Push通知が拒否されているようです。ブラウザの設定からPush通知を有効化してください');
-            return false;
-        } else if (permission === 'granted') {
-            alert('すでにWebPushを許可済みです');
-            return false;
-        }
+        if (permission === 'default') {
+    permission = await Notification.requestPermission();
+    if (permission !== 'granted') {
+        alert('通知が許可されませんでした');
+        return false;
     }
+}
     // 取得したPublicKey
     const appServerKey = 'BLRmm8Be6bli2tddSYqWcVoUydC1FCgHyP9iBiMeL2iOHMip4A6J_iqh1Xsg6M7303KpovBNwg2qIkVplBFzTeQ';
     const applicationServerKey = urlB64ToUint8Array(appServerKey);
