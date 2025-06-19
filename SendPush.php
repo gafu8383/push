@@ -4,7 +4,7 @@ require_once 'vendor/autoload.php';
 use Minishlink\WebPush\WebPush;
 use Minishlink\WebPush\Subscription;
 
-const VAPID_SUBJECT = 'ここにあなたのWebサイトのURL（http://localhost:5000/ とか https://nnahito.com/ とか）';
+const VAPID_SUBJECT = 'https://gafu8383.github.io/push';
 const PUBLIC_KEY = 'BLRmm8Be6bli2tddSYqWcVoUydC1FCgHyP9iBiMeL2iOHMip4A6J_iqh1Xsg6M7303KpovBNwg2qIkVplBFzTeQ';
 const PRIVATE_KEY = 'dadf3mFFTx8f3T4D7jDh2Mb5VvzvBOCTOWBgW08rGLo';
 
