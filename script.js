@@ -23,7 +23,7 @@ async function allowWebPush() {
     }
 }
     // 取得したPublicKey
-    const appServerKey = 'BLRmm8Be6bli2tddSYqWcVoUydC1FCgHyP9iBiMeL2iOHMip4A6J_iqh1Xsg6M7303KpovBNwg2qIkVplBFzTeQ';
+    const appServerKey = 'BI3cmMF3aztywu1vkGxfTGpR2hFEhFSnhE1BQafj08LECgr60ET6hEMp84zNEEMYLM5_S_D7kydUdRmHD-tV5Fk';
     const applicationServerKey = urlB64ToUint8Array(appServerKey);
 
     // push managerにサーバーキーを渡し、トークンを取得
