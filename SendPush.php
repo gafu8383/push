@@ -4,9 +4,9 @@ require_once 'vendor/autoload.php';
 use Minishlink\WebPush\WebPush;
 use Minishlink\WebPush\Subscription;
 
-const VAPID_SUBJECT = 'https://gafu8383.github.io/push';
-const PUBLIC_KEY = 'BLRmm8Be6bli2tddSYqWcVoUydC1FCgHyP9iBiMeL2iOHMip4A6J_iqh1Xsg6M7303KpovBNwg2qIkVplBFzTeQ';
-const PRIVATE_KEY = 'dadf3mFFTx8f3T4D7jDh2Mb5VvzvBOCTOWBgW08rGLo';
+const VAPID_SUBJECT = 'https://profile.kamichita.f5.si/push';
+const PUBLIC_KEY = 'BI3cmMF3aztywu1vkGxfTGpR2hFEhFSnhE1BQafj08LECgr60ET6hEMp84zNEEMYLM5_S_D7kydUdRmHD-tV5Fk';
+const PRIVATE_KEY = '5exnDTaspZ5mePOgMAF0JSVkndMmKs1zB7ddBZPPnFQ';
 
 // push通知認証用のデータ
 $subscription = Subscription::create([
