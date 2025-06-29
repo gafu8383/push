@@ -4,7 +4,7 @@ require_once 'vendor/autoload.php';
 use Minishlink\WebPush\WebPush;
 use Minishlink\WebPush\Subscription;
 
-const VAPID_SUBJECT = 'https://profile.kamichita.f5.si/push';
+const VAPID_SUBJECT = 'https://push.kamichita.f5.si/';
 const PUBLIC_KEY = 'BI3cmMF3aztywu1vkGxfTGpR2hFEhFSnhE1BQafj08LECgr60ET6hEMp84zNEEMYLM5_S_D7kydUdRmHD-tV5Fk';
 const PRIVATE_KEY = '5exnDTaspZ5mePOgMAF0JSVkndMmKs1zB7ddBZPPnFQ';
 
